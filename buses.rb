@@ -33,7 +33,7 @@ attr_reader(:route, :destination)
   end
 
   def pick_up_queue(queue)
-    for passenger in queue.queue
+    for passenger in queue
       pick_up(passenger)
     end
   end
